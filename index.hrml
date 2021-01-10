@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>なんとかボタン</title>
+  <style type="text/css">
+   <!--
+
+body{
+text-align:center;
+}
+
+#btn{
+margin:0 auto;
+height30px;
+width:500px;
+border-radius:10px;
+background:skyblue;
+text-align:center;
+font-size:30px;
+}
+
+　　-->
+  </style>
+</head>
+<body>
+  <h1>なんとかボタン</h1>
+  <div id="btn">押してみろよ</div>
+
+<script>
+let btn = document.getElementById("btn");
+
+btn.addEventListener('click',function(){
+let num =Math.floor(Math.random()*31);
+let donum =Math.floor(Math.random()*11);
+
+if(donum == 1){
+btn.textContent =num+"RTで目晒す";
+}else if(donum == 2){
+btn.textContent =num+"RTで本人アイコン";
+}else if(donum == 3){
+btn.textContent =num+"RTで歌声晒す";
+}else if(donum == 4){
+btn.textContent =num+"RTで1日語尾「にゃん」";
+}else if(donum == 5){
+btn.textContent =num+"RTで体重晒す";
+}else if(donum == 6){
+btn.textContent =num+"RTにつき10分ダンス";
+}else if(donum == 7){
+btn.textContent =num+"RTでTwitter禁止(1日)";
+}else if(donum == 8){
+btn.textContent =num+"RTにつき1枚脱ぐ(え？)";
+}else if(donum == 9){
+btn.textContent =num+"RTで変顔晒す";
+}else if(donum == 10){
+btn.textContent =num+"RTで"+num+"日間Twitter禁止";
+}else if(donum == 11){
+btn.textContent =num+"RTでなんも晒さない";
+}
+
+
+});
+
+
+</script>
+</body>
+</html>
